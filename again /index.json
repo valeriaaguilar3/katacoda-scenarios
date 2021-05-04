@@ -24,7 +24,7 @@
     }
   },
   "environment": {
-    "uilayout": "editor-terminal"
+    "uilayout": "editor"
   },
   "backend": {
     "imageid": "ubuntu:1804"
