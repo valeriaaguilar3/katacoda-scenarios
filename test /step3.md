@@ -73,10 +73,7 @@ After completeing docker-compose.yml file, try this command:
 
 You now have a running container! 
 
-Copy file to editor:
-
-var http = require('http'); var requestListener = function (req, res) { res.writeHead(200); res.end('Hello, World!'); }
-
+<pre class="file" data-target="clipboard">
 version: "3.9"
 services:
     flask_app:
@@ -87,7 +84,7 @@ services:
         - ./nginx.conf:/etc/nginx/nginx.conf
       ports: 
         - "3000:80"
-
+</pre>
 
 ### Stopping And Removing The Container With Docker Compose 
 
