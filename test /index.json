@@ -25,18 +25,11 @@
       "text": "finish.md"
     }
   },
-  "files": [
-    "Dockerfile", "nginx.conf","wsgi.py","app.py","docker-compose.yml"
-  ],
   "environment": {
-    "uilayout": "editor-terminal"
+    "uilayout": "editor"
   },
 
   "backend": {
-<<<<<<< HEAD
     "imageid": "ubuntu:1804"
-=======
-    "imageid": "ubuntu1804"
->>>>>>> 4040f9039410ffd5c481593a99563bd1e261254c
   }
 }
