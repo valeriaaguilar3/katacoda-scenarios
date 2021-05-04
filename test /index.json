@@ -21,10 +21,13 @@
       "text": "finish.md"
     }
   },
+  "files": [
+    "Dockerfile", "nginx.conf","wsgi.py","app.py","docker-compose.yml"
+  ],
   "environment": {
     "uilayout": "terminal"
   },
   "backend": {
-    "imageid": "python:3.8"
+    "imageid": "ubuntu:1804"
   }
 }
