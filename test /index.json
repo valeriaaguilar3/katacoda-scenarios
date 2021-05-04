@@ -1,8 +1,8 @@
 {
-  "title": "test ",
-  "description": "test ",
-  "difficulty": "Beginner",
-  "time": "2 minutes",
+  "title": "Docker Practice",
+  "description": "Learn what Docker is and the basic fundamentals of it.",
+  "difficulty": "Intermediate",
+  "time": "15 minutes",
   "details": {
     "steps": [
       {
@@ -12,6 +12,10 @@
       {
         "title": "Step 2",
         "text": "step2.md"
+      },
+      {
+        "title": "Step 3",
+        "text": "step3.md"
       }
     ],
     "intro": {
@@ -22,9 +26,10 @@
     }
   },
   "environment": {
-    "uilayout": "terminal"
+    "uilayout": "editor-terminal"
+    
   },
   "backend": {
-    "imageid": "python:3.8"
+    "imageid": "ubuntu:1804"
   }
 }
