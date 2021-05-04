@@ -73,7 +73,9 @@ After completeing docker-compose.yml file, try this command:
 
 You now have a running container! 
 
-Copy file to editor: 
+Copy file to editor:
+
+var http = require('http'); var requestListener = function (req, res) { res.writeHead(200); res.end('Hello, World!'); }
 
 version: "3.9"
 services:
