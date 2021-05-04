@@ -25,6 +25,9 @@
       "text": "finish.md"
     }
   },
+  "files": [
+    "Dockerfile", "nginx.conf","wsgi.py","app.py","docker-compose.yml"
+  ],
   "environment": {
     "uilayout": "editor"
   },
