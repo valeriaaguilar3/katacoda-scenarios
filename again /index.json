@@ -1,20 +1,18 @@
 {
-  "title": "Docker Practice",
-  "description": "Learn what Docker is and the basic fundamentals of it.",
-  "difficulty": "Intermediate",
-  "time": "15 minutes",
+  "title": "Creating Your First Katacoda Scenario",
+  "description": "Learn how to create your first Katacoda scenario",
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Step 1 - Scenario Structure",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Step 2 - Scenario Syntax",
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "Step 3 - CLI",
         "text": "step3.md"
       }
     ],
@@ -27,16 +25,11 @@
   },
   "files": [
     "Dockerfile", "nginx.conf","wsgi.py","app.py","docker-compose.yml"
-  ],
+],
   "environment": {
     "uilayout": "editor-terminal"
   },
-
   "backend": {
-<<<<<<< HEAD
     "imageid": "ubuntu:1804"
-=======
-    "imageid": "ubuntu1804"
->>>>>>> 4040f9039410ffd5c481593a99563bd1e261254c
   }
 }

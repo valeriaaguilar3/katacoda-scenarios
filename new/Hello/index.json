@@ -1,6 +1,6 @@
 {
-  "title": "katacoda scenario test ",
-  "description": "testing connection to katacoda account ",
+  "title": "Testing Editor",
+  "description": "testing editor and terminal ",
   "difficulty": "Beginner",
   "time": "2 minutes",
   "details": {
@@ -26,9 +26,9 @@
     }
   },
   "environment": {
-    "uilayout": "terminal"
+    "uilayout": "editor-terminal"
   },
   "backend": {
-    "imageid": "python"
+    "imageid": "ubuntu1804"
   }
 }
