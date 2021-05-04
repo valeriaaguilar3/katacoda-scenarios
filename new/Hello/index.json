@@ -1,8 +1,8 @@
 {
-  "title": "Docker Practice",
-  "description": "Learn what Docker is and the basic fundamentals of it.",
-  "difficulty": "Intermediate",
-  "time": "15 minutes",
+  "title": "Testing Editor",
+  "description": "testing editor and terminal ",
+  "difficulty": "Beginner",
+  "time": "2 minutes",
   "details": {
     "steps": [
       {
@@ -28,8 +28,7 @@
   "environment": {
     "uilayout": "editor-terminal"
   },
-
   "backend": {
-    "imageid": "ubuntu:1804"
+    "imageid": "ubuntu1804"
   }
 }

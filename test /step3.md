@@ -2,6 +2,8 @@
 
 ### Docker Detach
 
+Before we continue, do a 'control C' command in the terminal. 
+
 Now we will restart the container with the command: 
 `docker run -d app`{{execute}}
 
@@ -68,7 +70,7 @@ Now you will create the docker compose file:
 Copy the the file below into the docker-compose.yml file:
 
 <pre class="file" data-target="clipboard">
-version: "3.9"
+version: "2.2"
 services:
     flask_app:
       build: . 
