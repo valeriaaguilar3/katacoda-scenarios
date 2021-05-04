@@ -1,6 +1,6 @@
 ## Learning More Docker Commands
 
-### Docker Daemon 
+### Docker Detach
 
 Now we will restart the container with the command: 
 `docker run -d app`{{execute}}
@@ -36,42 +36,36 @@ Copy the command below into the terminal, but do not execute just yet:
 This command will will remove the container. 
 
 
+### Creating the NGINX.CONF file
+
+Create the nginx file: 
+
+`touch nginx.conf`{{execute}}
+
+<pre class="file" data-target="clipboard">
+events {
+}
+
+http{
+    server {
+        listen 80 default_server;
+        server_name _;
+
+        location /app {
+            proxy_pass http://flask_app:5000/;
+        }
+    }
+}
+</pre>
+
+
 ### Creating The Docker Compose File 
 
 Now you will create the docker compose file: 
 
 `touch docker-compose.yml`{{execute}}
 
-Copy the following lines into the file: 
-
-`version: "2.2"`{{copy}}
-
-Hit enter to move to the next line. 
-
-Copy the next line and paste it directly under the first line. 
-
-`services: `{{copy}}
-
-Hit enter to move to the next line. 
-
-Before pasting this line, you should indent by hitting the space bar 4 times. 
-
-`    flask_app: `{{copy}}
-
-Then hit enter to move to the next line. 
-
-Before pasting this line, make sure the cursor is directly underneath 'flask_app: ' and hit the space bar 2 times to indent. 
-
-`      build: .`{{copy}}
-
-
-This file defines the services that are being used.
-
-After completeing docker-compose.yml file, try this command: 
-
-`docker-compose up -d`{{execute}}
-
-You now have a running container! 
+Copy the the file below into the docker-compose.yml file:
 
 <pre class="file" data-target="clipboard">
 version: "3.9"
@@ -86,7 +80,24 @@ services:
         - "3000:80"
 </pre>
 
-### Stopping And Removing The Container With Docker Compose 
+This file defines the services that make up your app in docker-compose.yml so they can be run together in an isolated environment.
+
+After completeing docker-compose.yml file, try this command: 
+
+`docker-compose up -d`{{execute}}
+
+You now have a running container with an Nginx image!
+
+You can double check that your app is up and running with the command: 
+
+`docker-compose logs`{{execute}}
+
+And also with: 
+
+`docker-compose ps`{{execute}}
+
+
+### Stopping And Removing Docker Compose 
 
 To stop and remove the container, execute the command below: 
 
